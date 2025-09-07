@@ -18,10 +18,10 @@ const Footer = () => (
       <div>
         <h3 className="font-bold mb-2">Contact</h3>
         <div className="flex space-x-4 text-2xl">
-          <a href="mailto:your.email@gmail.com" className="hover:text-red-400"><FaEnvelope /></a>
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-green-400"><FaGithub /></a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500"><FaLinkedin /></a>
-          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400"><FaTwitter /></a>
+          <a href="mailto:nehagoyal5557@gmail.com" className="hover:text-red-400"><FaEnvelope /></a>
+          <a href="https://github.com/flash-source" target="_blank" rel="noopener noreferrer" className="hover:text-green-400"><FaGithub /></a>
+          <a href="https://www.linkedin.com/in/neha-goyal-bab655319/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500"><FaLinkedin /></a>
+          <a href="https://x.com/Nehagoyal1407" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400"><FaTwitter /></a>
         </div>
       </div>
     </div>
