@@ -30,11 +30,11 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900">
-      <Navbar onAddStartup={handleAddStartupClick} />
+      <Navbar id="showcase" onAddStartup={handleAddStartupClick} />
 
       <main className="pt-20">
         {/* Header Section */}
-        <section id="showcase" className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-25 text-center scroll-mt-20">
+        <section  className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-25 text-center scroll-mt-20">
           <h1 className="text-5xl font-extrabold mb-4 drop-shadow-lg">Startup Buddy</h1>
           <TypingText text="Explore, discover, and connect with innovative startups from every industry." speed={50} />
         </section>
