@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+.animate-blink {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+}
