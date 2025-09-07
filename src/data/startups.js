@@ -24,7 +24,7 @@ const startups = [
       "founded": 2023,
       "funding": "Seed",
       "logo": "https://www.startuphub.ai/wp-content/uploads/cluely-logo-6867e966cd7ec.jpg",
-      "website": "https://www.cluely.ai",
+      "website": "https://cluely.com/",
       "description": "An AI-powered productivity assistant that helps teams manage tasks and workflows efficiently."
     },
     {
@@ -44,7 +44,7 @@ const startups = [
       "founded": 2022,
       "funding": "Seed",
       "logo": "https://d3jbu7vaxvlagf.cloudfront.net/small/v2/category_media/logo_template_img_16641764504950.png",
-      "website": "https://www.intuned.com",
+      "website": "https://intunedhq.com/",
       "description": "Developing AI-driven tools for consumer underwriting automation."
     },
     {
@@ -54,7 +54,17 @@ const startups = [
       "founded": 2021,
       "funding": "Series C",
       "logo": "https://upload.wikimedia.org/wikipedia/en/7/7d/Logo_of_Zepto.png",
-      "website": "https://www.zepto.in/"
+      "website": "https://www.zeptonow.com/"
+    },
+    
+    {
+      "name": "Ditto Insurance",
+      "industry": "InsurTech",
+      "location": "Bengaluru, Karnataka",
+      "founded": 2020,
+      "funding": "Seed",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO-P835DwtAY_FqGnpV2ob1kIT5puy7q51X0VwhnUDwICLuDx9R8vsH2BuRETFKSs2t48&usqp=CAU",
+      "website": "https://www.joinditto.in/"
     },
     {
       "name": "CRED",
@@ -66,16 +76,6 @@ const startups = [
       "website": "https://cred.club/"
     },
 
-    {
-      "name": "Ditto Insurance",
-      "industry": "InsurTech",
-      "location": "Bengaluru, Karnataka",
-      "founded": 2020,
-      "funding": "Seed",
-      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO-P835DwtAY_FqGnpV2ob1kIT5puy7q51X0VwhnUDwICLuDx9R8vsH2BuRETFKSs2t48&usqp=CAU",
-      "website": "https://www.joinditto.in/"
-    },
-    
     {
       "name": "CityMall",
       "industry": "E-commerce",

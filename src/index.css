@@ -11,3 +11,7 @@
   margin-left: 2px;
   animation: blink 1s infinite;
 }
+
+html {
+  scroll-behavior: smooth;
+}

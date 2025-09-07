@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import SearchBar from "./components/SearchBar";
-import StartupCard from "./components/StartupCard";
 import SubmitForm from "./components/SubmitForm";
 import FeaturedMarquee from "./components/FeaturedMarquee";
 import StartupList from "./components/StartupList";
@@ -12,7 +11,8 @@ import startupData from "./data/startups";
 function App() {
   const [query, setQuery] = useState("");
   const [startups, setStartups] = useState(startupData);
-  const [visibleCount, setVisibleCount] = useState(6);
+  const [visibleCount, setVisibleCount] = useState(9);
+  const [showSubmitForm, setShowSubmitForm] = useState(false);
 
   const addStartup = (newStartup) => setStartups([newStartup, ...startups]);
 
@@ -26,15 +26,16 @@ function App() {
 
   const handleViewMore = () => setVisibleCount(visibleCount + 3);
 
+  const handleAddStartupClick = () => setShowSubmitForm(true);
+
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900">
-      <Navbar />
+      <Navbar onAddStartup={handleAddStartupClick} />
+
       <main className="pt-20">
-        {/* Header */}
-        <section className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20 text-center">
-          <h1 className="text-5xl font-extrabold mb-4 drop-shadow-lg">
-            Startup Buddy
-          </h1>
+        {/* Header Section */}
+        <section id="showcase" className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-25 text-center scroll-mt-20">
+          <h1 className="text-5xl font-extrabold mb-4 drop-shadow-lg">Startup Buddy</h1>
           <TypingText text="Explore, discover, and connect with innovative startups from every industry." speed={50} />
         </section>
 
@@ -42,13 +43,17 @@ function App() {
           {/* Featured Marquee */}
           <FeaturedMarquee startups={featuredStartups} />
 
-          {/* Search */}
-          <SearchBar query={query} setQuery={setQuery} />
+          {/* Search Section */}
+          <section id="search">
+            <SearchBar query={query} setQuery={setQuery} />
+          </section>
 
-          {/* Startup Grid */}
-          <StartupList startups={visibleStartups} />
+          {/* Startup List Section */}
+          <section id="add">
+            <StartupList startups={visibleStartups} />
+          </section>
 
-          {/* View More */}
+          {/* View More Button */}
           {visibleCount < filteredStartups.length && (
             <div className="flex justify-center my-6">
               <button
@@ -59,11 +64,13 @@ function App() {
               </button>
             </div>
           )}
-
-          {/* Submit Form */}
-          <SubmitForm addStartup={addStartup} />
         </div>
       </main>
+
+      {/* Submit Form Modal */}
+      {showSubmitForm && (
+        <SubmitForm addStartup={addStartup} onClose={() => setShowSubmitForm(false)} />
+      )}
 
       <Footer />
     </div>
