@@ -11,7 +11,7 @@ import startupData from "./data/startups";
 function App() {
   const [query, setQuery] = useState("");
   const [startups, setStartups] = useState(startupData);
-  const [visibleCount, setVisibleCount] = useState(9);
+  const [visibleCount, setVisibleCount] = useState(6);
   const [showSubmitForm, setShowSubmitForm] = useState(false);
 
   const addStartup = (newStartup) => setStartups([newStartup, ...startups]);
